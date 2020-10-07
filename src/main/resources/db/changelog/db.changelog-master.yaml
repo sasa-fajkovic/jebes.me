@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Sasa Fajkovic
+      changes:
+        - createTable:
+            tableName: sentences
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: croatian_value
+                  type: text
+              - column:
+                  name: english_value
+                  type: text
