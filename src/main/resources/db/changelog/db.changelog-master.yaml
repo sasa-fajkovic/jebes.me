@@ -19,3 +19,6 @@ databaseChangeLog:
               - column:
                   name: english_value
                   type: text
+              - column:
+                  name: is_allowed
+                  type: boolean
