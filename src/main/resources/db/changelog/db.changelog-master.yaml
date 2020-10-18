@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: semtemces-1
+      id: sentences-1
       author: Sasa Fajkovic
       changes:
         - createTable:

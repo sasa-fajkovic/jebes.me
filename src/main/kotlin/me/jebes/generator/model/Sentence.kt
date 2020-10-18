@@ -11,5 +11,6 @@ data class Sentence(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
         val croatianValue: String,
-        val englishValue: String
+        val englishValue: String,
+        val isAllowed: Boolean
 )
