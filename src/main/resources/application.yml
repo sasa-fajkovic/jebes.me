@@ -4,7 +4,7 @@ spring:
       ddl-auto: none
     show-sql: false
   datasource:
-    url: jdbc:postgresql://localhost:5432/jebes_me
+    url: jdbc:postgresql://localhost:5432/jebesme
     username: jebesme
     password: jebesme
     driver-class-name: org.postgresql.Driver
