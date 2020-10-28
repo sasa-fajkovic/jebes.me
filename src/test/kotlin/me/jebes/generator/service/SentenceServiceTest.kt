@@ -1,5 +1,6 @@
 package me.jebes.generator.service
 
+import com.nhaarman.mockitokotlin2.mock
 import me.jebes.generator.model.Sentence
 import me.jebes.generator.repository.SentenceRepository
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -14,8 +15,7 @@ import org.mockito.junit.jupiter.MockitoExtension
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @ExtendWith(MockitoExtension::class)
 class SentenceServiceTest {
-    private val repository: SentenceRepository = Mockito.mock(SentenceRepository::class.java)
-
+    private val repository: SentenceRepository = mock()
     private val service: SentenceService = SentenceService(repository)
 
     @BeforeAll

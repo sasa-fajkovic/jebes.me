@@ -8,7 +8,5 @@ spring:
     username: sa
     password:
     driver-class-name: org.h2.Driver
-    schema: schema.sql
-    data: data.sql
   liquibase:
     enabled: false
