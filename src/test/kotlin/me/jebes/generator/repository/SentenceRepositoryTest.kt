@@ -15,13 +15,13 @@ class SentenceRepositoryTest {
 
     @Test
     fun shouldGetRandomSentences() {
-        val counterMap = HashMap<Long, Int>()
+        val counterMap = HashMap<Long?, Int>()
 
         for (i in 0..10) {
             val sentences = sentenceRepository.getRandomConfirmedSentences(3u)
 
             for (s in sentences) {
-                counterMap[s.id] = counterMap.getOrDefault(s.id, 0) + 1
+                counterMap[s?.id] = counterMap.getOrDefault(s.id, 0) + 1
             }
         }
 
